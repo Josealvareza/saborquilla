@@ -1,0 +1,184 @@
+body {
+  
+  background-color:white;
+  
+}
+
+
+@media screen and (max-width: 800px) {
+      #contenedor{
+                           width:100%;
+                           }
+}
+
+
+
+@media screen and (max-device-width : 480px) {
+
+        #sidebar{
+            display:none;
+            }
+
+                #menu{
+               text-align:center;
+               }
+}
+
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+       .entry, .entry-content
+       {
+          font-size:1.2em;
+          line-height:1.5em;
+
+    }
+ }
+
+
+
+
+
+header{
+    
+     height:300px; 
+     width: 900px;
+     
+}  
+
+
+p{
+    
+    
+    font: oblique bold 150% cursive;
+    line-height: 150%;
+    color:black;
+}
+
+main {
+            -webkit-column-count:3;
+            -moz-column-count:3;
+            column-count:3;
+            
+        }
+        
+        .social {
+    position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+    left: 0; /* Establecemos la barra en la izquierda */
+    top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+    z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+    .social ul {
+        list-style: none;
+    }
+ 
+    .social ul li a {
+        display: inline-block;
+        color:#fff;
+        background: #000;
+        padding: 10px 15px;
+        text-decoration: none;
+        -webkit-transition:all 500ms ease;
+        -o-transition:all 500ms ease;
+        transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+    }
+ 
+    .social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+    .social ul li .icon-twitter {background: #00abf0;}
+    .social ul li .icon-googleplus {background: #d95232;}
+    .social ul li .icon-pinterest {background: #ae181f;}
+    .social ul li .icon-mail {background: #666666;}
+ 
+    .social ul li a:hover {
+        background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+        padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+    }
+
+
+.boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+  .boton_personalizado:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+  
+  
+  
+  
+  
+  #carousel{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 20s infinite linear;
+}
+#carousel:hover{
+    animation-play-state: paused;
+}
+#carousel figure{
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 68%;
+    left: 10px;
+    top: 10px;
+    background: black;
+    overflow: hidden;
+    border: solid 5px black;
+}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carousel figure:nth-child(2){ transform: rotateY(40deg) translateZ(288px);}
+#carousel figure:nth-child(3){ transform: rotateY(80deg) translateZ(288px);}
+#carousel figure:nth-child(4){ transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(5){ transform: rotateY(160deg) translateZ(288px);}
+#carousel figure:nth-child(6){ transform: rotateY(200deg) translateZ(288px);}
+#carousel figure:nth-child(7){ transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(8){ transform: rotateY(280deg) translateZ(288px);}
+#carousel figure:nth-child(9){ transform: rotateY(320deg) translateZ(288px);}
+#carousel figure:nth-child(10){ transform: rotateY(360deg) translateZ(288px);}
+#carousel img{
+    -webkit-filter: grayscale(1);
+    cursor: pointer;
+    transition: all .5s ease;
+    width: 90%;
+}
+#carousel img:hover{
+    -webkit-filter: grayscale(0);
+    transform: scale(1.2,1.2);
+}
+@keyframes rotation{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+.container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 90%;
+    height: 80%;
+}
+
+
+
+
+
+
